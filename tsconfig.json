@@ -17,10 +17,23 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/style/*": ["./style/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "chatServer/server.js"
+  ],
+  "exclude": [
+    "node_modules",
+    ".github/workflows/nodejs.yml",
+    "*.mjs",
+    "chat_server"
+  ]
 }
